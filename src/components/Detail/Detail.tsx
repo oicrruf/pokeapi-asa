@@ -4,7 +4,7 @@ import { ColorExtractor } from "react-color-extractor";
 import { useLocation } from "react-router-dom";
 
 const Detail = () => {
-  const [detail, setDetail] = useState<string | null>(null);
+  const [detail, setDetail] = useState<any | null>({});
   const [pokemon, setPokemon] = useState<string | null>(null);
   const [colors, setColors] = useState([]);
 
