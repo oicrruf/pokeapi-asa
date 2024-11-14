@@ -4,7 +4,7 @@ import { ColorExtractor } from "react-color-extractor";
 import { useLocation } from "react-router-dom";
 
 const Detail = () => {
-  const [detail, setDetail] = useState<any | null>({});
+  const [detail, setDetail] = useState<any | null>(null);
   const [pokemon, setPokemon] = useState<string | null>(null);
   const [colors, setColors] = useState([]);
 
@@ -74,7 +74,6 @@ const Detail = () => {
               </div>
               <div>
                 <h2 className="text-pixel text-lg text-gray-700">Peso</h2>
-
                 <p className="pl-3 text-pixel text-gray-600">{detail.weight}</p>
               </div>
             </div>
